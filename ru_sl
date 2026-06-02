@@ -60,7 +60,7 @@ xkb_symbols "basic" {
     key <AC05> { [ Cyrillic_ghe,      Cyrillic_GHE,      Ukrainian_ghe_with_upturn, Ukrainian_GHE_WITH_UPTURN ] }; // G: г Г ґ Ґ
     key <AC06> { [ Cyrillic_ha,       Cyrillic_HA                                              ] }; // H: х Х
     key <AC07> { [ Cyrillic_shorti,   Cyrillic_SHORTI,   Cyrillic_je,       Cyrillic_JE       ] }; // J: й Й ј Ј
-    key <AC08> { [ Cyrillic_ka,       Cyrillic_KA,       Macedonian_kje,    Macedonian_KJE    ] }; // K: к К ќ Ќ
+    key <AC08> { [ Cyrillic_ka,       Cyrillic_KA,       U045C,             U040C             ] }; // K: к К ќ Ќ (Macedonian KJE)
     key <AC09> { [ Cyrillic_el,       Cyrillic_EL,       Cyrillic_lje,      Cyrillic_LJE      ] }; // L: л Л љ Љ
     key <AC10> { [ Cyrillic_che,      Cyrillic_CHE                                             ] }; // ;: ч Ч
     key <AC11> { [ Cyrillic_shcha,    Cyrillic_SHCHA,    Serbian_tshe,      Serbian_TSHE      ] }; // ': щ Щ ћ Ћ
@@ -69,7 +69,7 @@ xkb_symbols "basic" {
     // Bottom row (ZXCVBNM)
     key <AB01> { [ Cyrillic_ya,       Cyrillic_YA                                              ] }; // Z: я Я
     key <AB02> { [ Cyrillic_e,        Cyrillic_E                                               ] }; // X: э Э
-    key <AB03> { [ Cyrillic_tse,      Cyrillic_TSE,      Macedonian_gje,    Macedonian_GJE    ] }; // C: ц Ц ѓ Ѓ
+    key <AB03> { [ Cyrillic_tse,      Cyrillic_TSE,      U0453,             U0403             ] }; // C: ц Ц ѓ Ѓ (Macedonian GJE)
     key <AB04> { [ Cyrillic_ve,       Cyrillic_VE,       at,                at                ] }; // V: в В @ @
     key <AB05> { [ Cyrillic_be,       Cyrillic_BE                                              ] }; // B: б Б
     key <AB06> { [ Cyrillic_en,       Cyrillic_EN,       Cyrillic_nje,      Cyrillic_NJE      ] }; // N: н Н њ Њ
