@@ -39,23 +39,41 @@ This is an updated and working version of [anzeljg/ruska_sl](https://github.com/
 
 The AltGr layer gives access to characters from Belarusian, Ukrainian, Macedonian, and Serbian Cyrillic that are not part of standard Russian:
 
-| Key | AltGr | AltGr+Shift | Language |
-|-----|-------|-------------|----------|
-| Q | ї | Ї | Ukrainian |
-| E | є | Є | Ukrainian |
-| Y | ѕ | Ѕ | Macedonian |
-| U | ў | Ў | Belarusian |
-| I | і | І | Ukrainian/Belarusian |
-| ] | ђ | Ђ | Serbian |
-| D | џ | Џ | Serbian/Macedonian |
-| G | ґ | Ґ | Ukrainian |
-| J | ј | Ј | Serbian/Macedonian |
-| K | ќ | Ќ | Macedonian |
-| L | љ | Љ | Serbian/Macedonian |
-| ' | ћ | Ћ | Serbian |
-| C | ѓ | Ѓ | Macedonian |
-| V | @ | | (at sign) |
-| N | њ | Њ | Serbian/Macedonian |
+Keys are labeled by their **Slovenian** character (not QWERTY position).
+
+| Slovenian key | Base | Shift | AltGr | AltGr+Shift | Language |
+|---------------|------|-------|-------|-------------|----------|
+| Q | ы | Ы | ї | Ї | Ukrainian |
+| W | ё | Ё | | | Russian |
+| E | е | Е | є | Є | Ukrainian |
+| R | р | Р | | | |
+| T | т | Т | | | |
+| Z (key) | з | З | ѕ | Ѕ | Macedonian |
+| U | у | У | ў | Ў | Belarusian |
+| I | и | И | і | І | Ukrainian/Belarusian |
+| O | о | О | | | |
+| P | п | П | | | |
+| Š | ш | Ш | | | |
+| Đ | ю | Ю | ђ | Ђ | Serbian |
+| A | а | А | | | |
+| S | с | С | | | |
+| D | д | Д | џ | Џ | Serbian/Macedonian |
+| F | ф | Ф | | | |
+| G | г | Г | ґ | Ґ | Ukrainian |
+| H | х | Х | | | |
+| J | й | Й | ј | Ј | Serbian/Macedonian |
+| K | к | К | ќ | Ќ | Macedonian |
+| L | л | Л | љ | Љ | Serbian/Macedonian |
+| Č | ч | Ч | | | |
+| Ž | щ | Щ | ћ | Ћ | Serbian |
+| Y (key) | я | Я | | | |
+| X | э | Э | | | |
+| C | ц | Ц | ѓ | Ѓ | Macedonian |
+| V | в | В | @ | | |
+| B | б | Б | | | |
+| N | н | Н | њ | Њ | Serbian/Macedonian |
+| M | м | М | | | |
+| ` | ь | Ь | ъ | Ъ | Russian |
 
 ---
 
