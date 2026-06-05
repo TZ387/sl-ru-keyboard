@@ -26,9 +26,9 @@ This is an updated and working version of [anzeljg/ruska_sl](https://github.com/
 │       │ <   │ Y   │ X   │ C   │ V   │ B   │ N   │ M   │ ;   │ :   │ _   │               │
 │ Shift │ >   │ y   │ x   │ c   │ v   │ b   │ n   │ m   │ ,   │ .   │ -   │     Shift     │
 ├───────┼─────┴─┬───┴───┬─┴─────┴─────┴─────┴─────┴─────┴─────┴───┬─┴─────┼───────┬───────┤
-│       │       │       │                                           │       │       │       │
-│ Ctrl  │ Meta  │  Alt  │                  Space                    │ AltGr │ Menu  │ Ctrl  │
-└───────┴───────┴───────┴───────────────────────────────────────────┴───────┴───────┴───────┘
+│       │       │       │                                         │       │       │       │
+│ Ctrl  │ Meta  │  Alt  │                  Space                  │ AltGr │ Menu  │ Ctrl  │
+└───────┴───────┴───────┴─────────────────────────────────────────┴───────┴───────┴───────┘
 ```
 
 > **Note:** The position of Ž varies by keyboard. On most desktop/external keyboards it is located below Đ (at the end of the home row). On some laptops (like the one used to develop this layout) it is to the right of Đ in the top letter row, as shown above. Either way, Ž correctly produces **ж** in the Cyrillic layout.
@@ -49,9 +49,9 @@ This is an updated and working version of [anzeljg/ruska_sl](https://github.com/
 │       │ >   │ Я   │ Э   │ Ц Ѓ │ В   │ Б   │ Н Њ │ М   │ ;   │ :   │ _   │               │
 │ Shift │ <   │ я   │ э   │ ц ѓ │ в @ │ б   │ н њ │ м   │ ,   │ .   │ -   │     Shift     │
 ├───────┼─────┴─┬───┴───┬─┴─────┴─────┴─────┴─────┴─────┴─────┴───┬─┴─────┼───────┬───────┤
-│       │       │       │                                           │       │       │       │
-│ Ctrl  │ Meta  │  Alt  │                  Space                    │ AltGr │ Menu  │ Ctrl  │
-└───────┴───────┴───────┴───────────────────────────────────────────┴───────┴───────┴───────┘
+│       │       │       │                                         │       │       │       │
+│ Ctrl  │ Meta  │  Alt  │                  Space                  │ AltGr │ Menu  │ Ctrl  │
+└───────┴───────┴───────┴─────────────────────────────────────────┴───────┴───────┴───────┘
 ```
 
 **Key levels:**
