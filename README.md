@@ -10,6 +10,31 @@ This is an updated and working version of [anzeljg/ruska_sl](https://github.com/
 
 ## Keyboard layout
 
+### Slovenian keyboard (physical keys)
+
+```
+┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬───────────┐
+│ ¸ ¨ │ !   │ "   │ #   │ $   │ %   │ &   │ /   │ (   │ )   │ =   │ ?   │ *   │           │
+│   ° │ 1   │ 2   │ 3   │ 4   │ 5   │ 6   │ 7   │ 8   │ 9   │ 0   │ '   │ +   │ Backspace │
+├─────┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬─────────┤
+│       │ Q   │ W   │ E   │ R   │ T   │ Z   │ U   │ I   │ O   │ P   │ Š   │ Đ   │         │
+│ Tab   │ q   │ w   │ e   │ r   │ t   │ z   │ u   │ i   │ o   │ p   │ š   │ đ   │   Enter │
+├───────┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┐       │
+│ Caps    │ A   │ S   │ D   │ F   │ G   │ H   │ J   │ K   │ L   │ Č   │ Ć   │ Ž   │       │
+│ Lock    │ a   │ s   │ d   │ f   │ g   │ h   │ j   │ k   │ l   │ č   │ ć   │ ž   │       │
+├───────┬─┴───┬─┴───┬─┴───┬─┴───┬─┴───┬─┴───┬─┴───┬─┴───┬─┴───┬─┴───┬─┴───┬─┴─────┴───────┤
+│       │ <   │ Y   │ X   │ C   │ V   │ B   │ N   │ M   │ ;   │ :   │ _   │               │
+│ Shift │ >   │ y   │ x   │ c   │ v   │ b   │ n   │ m   │ ,   │ .   │ -   │     Shift     │
+├───────┼─────┴─┬───┴───┬─┴─────┴─────┴─────┴─────┴─────┴─────┴───┬─┴─────┼───────┬───────┤
+│       │       │       │                                           │       │       │       │
+│ Ctrl  │ Meta  │  Alt  │                  Space                    │ AltGr │ Menu  │ Ctrl  │
+└───────┴───────┴───────┴───────────────────────────────────────────┴───────┴───────┴───────┘
+```
+
+> **Note:** The position of Ž varies by keyboard. On most desktop/external keyboards it is located below Đ (at the end of the home row). On some laptops (like the one used to develop this layout) it is to the right of Đ in the top letter row, as shown above. Either way, Ž correctly produces **ж** in the Cyrillic layout.
+
+### Cyrillic layout (what you type)
+
 ```
 ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬───────────┐
 │ Ь Ъ │ !   │ "   │ #   │ $   │ %   │ &   │ /   │ (   │ )   │ =   │ ?   │ *   │           │
