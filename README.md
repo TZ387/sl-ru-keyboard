@@ -55,6 +55,7 @@ Keys are labeled by their **Slovenian** character (not QWERTY position).
 | P | п | П | | | |
 | Š | ш | Ш | | | |
 | Đ | ю | Ю | ђ | Ђ | Serbian |
+| Ž | ж | Ж | | | |
 | A | а | А | | | |
 | S | с | С | | | |
 | D | д | Д | џ | Џ | Serbian/Macedonian |
@@ -65,7 +66,7 @@ Keys are labeled by their **Slovenian** character (not QWERTY position).
 | K | к | К | ќ | Ќ | Macedonian |
 | L | л | Л | љ | Љ | Serbian/Macedonian |
 | Č | ч | Ч | | | |
-| Ž | щ | Щ | ћ | Ћ | Serbian |
+| Ć | щ | Щ | ћ | Ћ | Serbian |
 | Y (key) | я | Я | | | |
 | X | э | Э | | | |
 | C | ц | Ц | ѓ | Ѓ | Macedonian |
