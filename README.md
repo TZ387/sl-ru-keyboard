@@ -31,7 +31,7 @@ This is an updated and working version of [anzeljg/ruska_sl](https://github.com/
 └───────┴───────┴───────┴─────────────────────────────────────────┴───────┴───────┴───────┘
 ```
 
-> **Note:** The position of Ž varies by keyboard. On most desktop/external keyboards it is located below Đ (at the end of the home row). On some laptops (like the one used to develop this layout) it is to the right of Đ in the top letter row, as shown above. Either way, Ž correctly produces **ж** in the Cyrillic layout.
+> **Note:** The position of Ž varies by keyboard. On most desktop/external keyboards it is located below Đ (at the end of the home row). On some laptops (like the one used to develop this layout) it is to the right of Đ in the top letter row. Either way, Ž correctly produces **ж** in the Cyrillic layout.
 
 ### Cyrillic layout (what you type)
 
