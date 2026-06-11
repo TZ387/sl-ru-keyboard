@@ -162,6 +162,8 @@ A full logout/login (or reboot) is required for GNOME Settings to discover the n
 
 To switch between layouts, you can set a shortcut under **Settings → Keyboard → Keyboard Shortcuts → Switch input source** (e.g. `Super+Space` or `LShift+LCtrl`).
 
+**Note**: For switching the language layout using `Super+Space`, you have to press and hold the `Super` key and then click `Space` as many times as required.
+
 ### Optional: Test without logging out
 
 You can test the layout immediately in the current session (this does not affect GNOME Settings):
