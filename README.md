@@ -165,6 +165,8 @@ The steps vary slightly depending on your desktop environment:
 
 To switch layouts: use `Super+Space`. You can customize this in **Settings → Keyboard → Keyboard Shortcuts**.
 
+**Note**: For switching the language layout using `Super+Space`, you have to press and hold the `Super` key and then click `Space` as many times as required.
+
 #### Linux Mint (Cinnamon)
 1. Open **System Settings → Keyboard**.
 2. Switch to the **Layouts** tab.
@@ -215,18 +217,6 @@ If the layout does not appear in your settings or doesn't work as expected:
 The Slovenian, Croatian, and Serbian Latin keyboard layouts share the same physical key positions for the special characters (`Č`, `Š`, `Ž`, `Đ`, `Ć`). This means this layout works equally well if your physical keyboard is labeled as Croatian or Serbian Latin — the Cyrillic character mappings are identical.
 
 The layout is designed around the **positional logic** of the QWERTZ South Slavic keyboards, not Slovenian-specific keys, so the mapping feels natural on all three variants.
-
----
-
-## How it works — why the AltGr layer covers so many languages
-
-The XKB symbol file defines up to 4 levels per key:
-1. Base (plain keypress)
-2. Shift
-3. AltGr
-4. AltGr+Shift
-
-The base and Shift levels cover standard Russian Cyrillic. The AltGr and AltGr+Shift levels were used to place characters from other Cyrillic-script languages that don't exist in Russian — Ukrainian `і/ї/є/ґ`, Belarusian `ў`, Macedonian `ѕ/ѓ/ќ`, and Serbian `ђ/ћ/ј/љ/њ/џ`. This means a single layout file gives you access to all six languages without switching layouts.
 
 ---
 
