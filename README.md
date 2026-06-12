@@ -1,10 +1,10 @@
 # sl-ru-keyboard
 
-Russian Cyrillic keyboard layout for Slovenian (and Croatian/Serbian Latin) keyboards on Ubuntu 24.
+Russian Cyrillic keyboard layout for Slovenian (and Croatian/Serbian Latin) keyboards on **Ubuntu 24** and **Linux Mint**.
 
 This layout maps Russian (and other Cyrillic) characters to the **physically equivalent keys on a Slovenian keyboard** — so the key where you'd type `Č` produces `Ч`, `Š` produces `Ш`, and so on. The AltGr layer extends the layout to cover characters from **6 Cyrillic-script languages**: Russian, Belarusian, Bulgarian, Macedonian, Serbian Cyrillic, and Ukrainian.
 
-This is an updated and working version of [anzeljg/ruska_sl](https://github.com/anzeljg/ruska_sl), adapted for **Ubuntu 24.04** (the original instructions were outdated — they referenced files and steps that no longer work on modern Ubuntu).
+This is an updated and working version of [anzeljg/ruska_sl](https://github.com/anzeljg/ruska_sl), adapted for **Ubuntu 24.04** and **Linux Mint** (the original instructions were outdated — they referenced files and steps that no longer work on modern systems).
 
 ---
 
@@ -103,12 +103,12 @@ Keys are labeled by their **Slovenian** character (not QWERTY position).
 
 ---
 
-## Installation on Ubuntu 24.04
+## Installation on Ubuntu and Linux Mint
 
-> **Note:** The installation method for Ubuntu 24 differs from older guides. The key differences are:
-> - You must edit `evdev.xml` (not `base.xml` or `base.lst` as older guides say)
-> - You need to clear the XKB cache after changes
-> - A full logout/login or reboot is required for GNOME to pick up the new layout
+> **Note:** The installation method for modern distributions (Ubuntu 24.x, Linux Mint 21/22) differs from older guides. The key points are:
+> - You must edit `evdev.xml` (not `base.xml` or `base.lst` as older guides say).
+> - You need to clear the XKB cache after changes.
+> - A session restart (logout/login) or reboot is required for the system to discover the new layout.
 
 ### Step 1 — Copy the symbol file
 
@@ -151,32 +151,62 @@ sudo rm -rf /var/lib/xkb/*
 
 ### Step 4 — Log out and log back in
 
-A full logout/login (or reboot) is required for GNOME Settings to discover the new layout.
+A full logout/login (or reboot) is required for the desktop environment to discover the new layout entries.
 
-### Step 5 — Add the layout in GNOME Settings
+### Step 5 — Add the layout in System Settings
 
-1. Open **Settings → Keyboard → Input Sources**
-2. Click **+**
-3. Select **Other** (or search for "Russian")
-4. Find **Russian (Slovenian keyboard)** and add it
+The steps vary slightly depending on your desktop environment:
 
-To switch between layouts, you can set a shortcut under **Settings → Keyboard → Keyboard Shortcuts → Switch input source** (e.g. `Super+Space` or `LShift+LCtrl`).
+#### Ubuntu (GNOME)
+1. Open **Settings → Keyboard → Input Sources**.
+2. Click **+**.
+3. Select **Other** (or search for "Russian").
+4. Find **Russian (Slovenian keyboard)** and add it.
 
-**Note**: For switching the language layout using `Super+Space`, you have to press and hold the `Super` key and then click `Space` as many times as required.
+To switch layouts: use `Super+Space`. You can customize this in **Settings → Keyboard → Keyboard Shortcuts**.
+
+#### Linux Mint (Cinnamon)
+1. Open **System Settings → Keyboard**.
+2. Switch to the **Layouts** tab.
+3. Click the **+** button in the bottom left.
+4. Search for **Russian** and find **Russian (Slovenian keyboard)**.
+5. Click **Add**.
+
+To switch layouts: Click **Options...** in the Keyboard Layouts window and look for **Switching to another layout** to define your preferred shortcut (e.g., `Alt+Shift` or `Caps Lock`).
 
 ### Optional: Test without logging out
 
-You can test the layout immediately in the current session (this does not affect GNOME Settings):
+You can test the layout immediately in the current session.
 
+**On X11 (default for Linux Mint):**
 ```bash
 setxkbmap ru_sl
 ```
+To revert: `setxkbmap si`.
 
-To revert to the Slovenian layout:
+**On Wayland (default for Ubuntu):**
+`setxkbmap` might not work reliably. It is better to use the System Settings method or use a Wayland-native tool like `gsettings` (though adding a new layout via CLI on GNOME/Wayland is complex and not recommended for most users).
 
-```bash
-setxkbmap si
-```
+---
+
+## Troubleshooting and Verification
+
+If the layout does not appear in your settings or doesn't work as expected:
+
+1. **Verify file location:** Ensure the file was copied correctly:
+   ```bash
+   ls -l /usr/share/X11/xkb/symbols/ru_sl
+   ```
+2. **Check XML syntax:** Ensure you didn't accidentally break the `evdev.xml` file. You can check its validity (though it's a large file) by opening it and ensuring your `<layout>` block is correctly closed and inside `<layoutList>`.
+3. **Verify registration:** Search for your entry in the system file:
+   ```bash
+   grep -A 10 "ru_sl" /usr/share/X11/xkb/rules/evdev.xml
+   ```
+4. **Force cache reload:** Sometimes `sudo rm -rf /var/lib/xkb/*` is not enough. You can also try re-configuring the keyboard-configuration package (mostly for Debian/Ubuntu):
+   ```bash
+   sudo dpkg-reconfigure keyboard-configuration
+   ```
+5. **Layout doesn't show up in the list:** If "Russian (Slovenian keyboard)" is missing from the "Other" list after a logout, double-check that you edited `/usr/share/X11/xkb/rules/evdev.xml` and not a different file.
 
 ---
 
