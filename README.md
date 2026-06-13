@@ -212,14 +212,6 @@ If the layout does not appear in your settings or doesn't work as expected:
 
 ---
 
-## Applicability to Croatian and Serbian Latin keyboards
-
-The Slovenian, Croatian, and Serbian Latin keyboard layouts share the same physical key positions for the special characters (`Č`, `Š`, `Ž`, `Đ`, `Ć`). This means this layout works equally well if your physical keyboard is labeled as Croatian or Serbian Latin — the Cyrillic character mappings are identical.
-
-The layout is designed around the **positional logic** of the QWERTZ South Slavic keyboards, not Slovenian-specific keys, so the mapping feels natural on all three variants.
-
----
-
 ## Credits
 
 Original layout concept and `ru_sl` symbol file by **Gregor Anželj** ([anzeljg/ruska_sl](https://github.com/anzeljg/ruska_sl)).  
