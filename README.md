@@ -8,7 +8,7 @@ This is an updated and working version of [anzeljg/ruska_sl](https://github.com/
 
 ## Quick Install
 
-For a fast automated setup, you can use the provided installation script. It will copy the layout files, register them in your system's XKB configuration, and clear the layout cache.
+For a fast automated setup, you can use the provided installation script. It will copy the layout files, register them in your system's XKB configuration, and clear the layout cache. If you want to perform manual installation, check the "Installation on Ubuntu and Linux Mint" section below.
 
 ```bash
 chmod +x install.sh

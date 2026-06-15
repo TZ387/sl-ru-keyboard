@@ -54,6 +54,8 @@ else
 
     # Prepare the XML entry
     TMP_ENTRY=$(mktemp)
+    TMP_EVDEV=$(mktemp)
+    trap 'rm -f "$TMP_ENTRY" "$TMP_EVDEV"' EXIT
     cat <<EOF > "$TMP_ENTRY"
         <layout>
           <configItem>
@@ -68,7 +70,6 @@ else
 EOF
 
     # Insert before the first </layoutList> using awk for reliability
-    TMP_EVDEV=$(mktemp)
     awk 'NR==FNR { a[n++]=$0; next } /<\/layoutList>/ && !done { for (i=0; i<n; i++) print a[i]; done=1 } { print }' "$TMP_ENTRY" "$EVDEV_XML" > "$TMP_EVDEV"
 
     sudo cp "$TMP_EVDEV" "$EVDEV_XML"
@@ -97,15 +98,20 @@ echo "Would you like to try the layout in the current session? (y/n)"
 read -n 1 -r
 echo
 if [[ $REPLY =~ ^[Yy]$ ]]; then
-    echo "Applying layout with setxkbmap ru_sl..."
-    if command -v setxkbmap >/dev/null 2>&1; then
-        if setxkbmap ru_sl; then
-            echo "Layout applied. Try typing!"
-            echo "To revert, run: setxkbmap si"
-        else
-            echo "Error: Failed to apply layout with setxkbmap."
-        fi
+    if [ "$XDG_SESSION_TYPE" = "wayland" ]; then
+        echo "Note: You are on a Wayland session. setxkbmap does not work reliably on Wayland."
+        echo "Please add the layout via System Settings after logging out and back in."
     else
-        echo "Error: 'setxkbmap' command not found. Cannot apply layout immediately."
+        echo "Applying layout with setxkbmap ru_sl..."
+        if command -v setxkbmap >/dev/null 2>&1; then
+            if setxkbmap ru_sl; then
+                echo "Layout applied. Try typing!"
+                echo "To revert, run: setxkbmap si"
+            else
+                echo "Error: Failed to apply layout with setxkbmap."
+            fi
+        else
+            echo "Error: 'setxkbmap' command not found. Cannot apply layout immediately."
+        fi
     fi
 fi
