@@ -6,6 +6,15 @@ This layout maps Russian (and other Cyrillic) characters to the **physically equ
 
 This is an updated and working version of [anzeljg/ruska_sl](https://github.com/anzeljg/ruska_sl), adapted for **Ubuntu 24.04** and **Linux Mint** (the original instructions were outdated — they referenced files and steps that no longer work on modern systems).
 
+## Quick Install
+
+For a fast automated setup, you can use the provided installation script. It will copy the layout files, register them in your system's XKB configuration, and clear the layout cache.
+
+```bash
+chmod +x install.sh
+./install.sh
+```
+
 ---
 
 ## Keyboard layout
