@@ -2,16 +2,18 @@
 
 Russian Cyrillic keyboard layout for Slovenian (and Croatian/Serbian Latin) keyboards on **Ubuntu 24** and **Linux Mint**.
 
+This layout maps Russian (and other Cyrillic) characters to the **physically equivalent keys on a Slovenian keyboard** — so the key where you'd type `Č` produces `Ч`, `Š` produces `Ш`, and so on. The AltGr layer extends the layout to cover characters from **6 Cyrillic-script languages**: Russian, Belarusian, Bulgarian, Macedonian, Serbian Cyrillic, and Ukrainian.
+
+This is an updated and working version of [anzeljg/ruska_sl](https://github.com/anzeljg/ruska_sl), adapted for **Ubuntu 24.04** and **Linux Mint** (the original instructions were outdated — they referenced files and steps that no longer work on modern systems).
+
 ## Quick Install
+
+For a fast automated setup, you can use the provided installation script. It will copy the layout files, register them in your system's XKB configuration, and clear the layout cache.
 
 ```bash
 chmod +x install.sh
 ./install.sh
 ```
-
-This layout maps Russian (and other Cyrillic) characters to the **physically equivalent keys on a Slovenian keyboard** — so the key where you'd type `Č` produces `Ч`, `Š` produces `Ш`, and so on. The AltGr layer extends the layout to cover characters from **6 Cyrillic-script languages**: Russian, Belarusian, Bulgarian, Macedonian, Serbian Cyrillic, and Ukrainian.
-
-This is an updated and working version of [anzeljg/ruska_sl](https://github.com/anzeljg/ruska_sl), adapted for **Ubuntu 24.04** and **Linux Mint** (the original instructions were outdated — they referenced files and steps that no longer work on modern systems).
 
 ---
 
